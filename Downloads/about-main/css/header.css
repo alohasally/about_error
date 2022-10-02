@@ -1,0 +1,97 @@
+header{
+  /*! padding-top: 57px; */
+  /*! padding-bottom: 54px; */
+  /*! position: absolute; */
+  /*! left: calc((100% - 1500px) / 2); */
+  /*! background-color: #e4c1cb; */
+  /*! padding-left: 50px; */
+  /*! padding-right: 50px; */
+}
+
+header div.wrap{
+
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1{
+
+font-size: 0px;
+width: 400px;
+position: absolute;
+left: calc((100% - 400px) / 2);
+background-image: url(../img/rasally_lg.png);
+background-repeat: no-repeat;
+background-size: 60%;
+height: 245px;
+top: -111px;
+transition: all 0.7s;
+text-align: center;
+display: block;
+cursor: pointer;
+z-index: 1;
+background-position: bottom;
+}
+
+
+header div.wrap li  a{
+  color:#ac5676;
+}
+
+header ul.gnb{
+
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+font-size: 15px;
+position: absolute;
+height: 145px;
+padding-top: 68px;
+box-sizing: border-box;
+margin: 0 auto;
+}
+
+
+header ul.gnb li{
+
+width: 10%;
+border-top: 1px;
+}
+
+header ul.gnb li:nth-child(2){
+ 
+  transform: translateX(-132px);
+}
+header ul.gnb li:nth-child(3){
+
+transform: translateX(212px);
+}
+
+header ul.gnb li:nth-child(4){
+
+transform: translateX(65px);
+}
+
+header ul.gnb li a{
+color:#ac5676;
+display: block;
+
+width: fit-content;
+}
+
+header ul.gnb li a:hover{
+color:#eab0ae;;
+}
+ 
+.currentGnb{
+transform: scale(1.4);
+color:#a82f5c !important;
+}
+.gnbcolor{
+color:#ac5676;
+}
+.scroll{
+  background-color: rgba(255,255,255,0.9);
+}

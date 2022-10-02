@@ -1,0 +1,172 @@
+aside{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  aside .quickmenu{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  aside .quickmenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transform: translateY(100%);
+  }
+  aside .quickmenu:hover ul{
+    animation-name: slideup;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes slideup{
+    0%{
+      transform: translateY(0);
+    }
+     100%{
+      transform: translateY(100%);
+    }
+  }
+  aside .quickmenu ul li {
+    width: 60px;
+    height: 60px;
+    background-color: #daafe8;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    /*! align-items: center; */
+    transition:all 0.5s;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    overflow: hidden;
+  }
+  aside .quickmenu ul li:nth-child(1){
+    background-image: url(../img/aside1.png);
+    background-color: #deb5ec;
+  }
+  aside .quickmenu ul li:nth-child(2){
+   background-image: url(../img/aside2.png);
+    background-color: #e0c3ea;
+  }
+  aside .quickmenu ul li:nth-child(3){
+    background-image: url(../img/aside3.png);
+    background-color: #e4d0eb;
+  }
+  aside .quickmenu ul li:hover{
+    width: 200px;
+  }
+  aside .quickmenu ul li a{
+    font-size: 12px;
+    white-space: nowrap;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+  }
+  aside .quickmenu a.up{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: block;
+    font-size: 0;
+    position: relative;
+  }
+  aside .quickmenu a.up::before{
+    content: "+";
+    font-size: 51px;
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+    height: 60px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    background-color: #ffe9ef;
+    border-radius: 50%;
+    transform: rotate(0deg);
+     
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  aside .quickmenu a.up:hover::before{
+    animation-name:rot;
+  }
+  @keyframes rot{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(135deg);
+    }
+  }
+  aside .quickmenu a.up::after{
+     content: "";
+     background-color: #fff;
+     width: 100%;
+     display: block;
+     height: 30px;
+     position: absolute;
+     bottom: 0;
+     z-index: 1;
+  }
+  aside .top{
+    width: 60px;
+    height: 60px;
+    background-color: #ac5676;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    font-size: 0;
+  }
+  
+  aside .top::before{
+    content: "";
+    transform: scale(0.6) rotate(45deg) translateX(40px) translateY(4px);
+    display: block;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    width: 30px;
+    height: 30px;
+    transition: all 4s;
+  }
+  aside .top:hover::before{
+    animation-name: updown;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes updown{
+    0%{
+      transform: scale(0.6) rotate(45deg) translateX(40px) translateY(4px);
+    }
+    100%{
+       transform: scale(0.7) rotate(45deg) translateX(30px) translateY(0px);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
